@@ -81,7 +81,7 @@ void main()
     int top = -1,val,ch,pos;
 
     do{
-        cout<<"\n 1.push \n 2.pop \n 3.display \n 4.modify \n 5.peep \n 6.exit";
+        cout<<"\n 1.push \n 2.pop \n 3.peep \n 4.modify \n 5.display \n 6.exit";
 
         cout<<"\n Enter Your Choice : ";
         cin>>ch;
@@ -96,7 +96,7 @@ void main()
             case 2: pop(stack,&top);
                     break;
 
-            case 3: display(stack,top);
+            case 3: peep(stack,top);
                     break;
             
             case 4: cout<<"\n Enter The Position : ";
@@ -106,7 +106,7 @@ void main()
                     modify(stack,&top,pos,val);
                     break;
             
-            case 5: peep(stack,top);
+            case 5: display(stack,top);
                     break;
 
             case 6: exit(0);
