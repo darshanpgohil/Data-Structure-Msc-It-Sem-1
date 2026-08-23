@@ -29,20 +29,15 @@ void pop(int s[10],int *top)
     *top = *top - 1;
 }
 
-void display(int s[10],int top)
+void peep(int s[10],int top)
 {
-    int i;
-
     if(top == -1)
     {
-        cout<<"\n Stack is empty";
+        cout<<"Stack Is Empty ";
         return;
     }
 
-    for(i=top;i>=0;i--)
-    {
-        cout<<"\n Stack : "<<s[i];
-    }
+    cout<<"Peep Value : "<<s[top];
 }
 
 void modify(int s[10],int *top,int pos,int val)
@@ -64,15 +59,20 @@ void modify(int s[10],int *top,int pos,int val)
     cout<<"Value Modify Succesfully";
 }
 
-void peep(int s[10],int top)
+void display(int s[10],int top)
 {
+    int i;
+
     if(top == -1)
     {
-        cout<<"Stack Is Empty ";
+        cout<<"\n Stack is empty";
         return;
     }
 
-    cout<<"Peep Value : "<<s[top];
+    for(i=top;i>=0;i--)
+    {
+        cout<<"\n Stack : "<<s[i];
+    }
 }
 
 void main()
