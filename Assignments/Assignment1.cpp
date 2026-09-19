@@ -4,7 +4,7 @@
 // 4) modify  5) display
 
 #include<iostream.h>
-
+#include<stdlib.h>
 void push(int s[10],int *top,int val)
 {
     if(*top == 9)
