@@ -2,6 +2,7 @@
 // to suffix expression using stack
 
 #include<iostream.h>
+#include<conio.h>
 #include<string.h>
 
 char nextChar(char infix[])
@@ -140,7 +141,7 @@ void main()
         if(stack[top] == '(')
         {
             cout<<"\n Invalid Expression";
-            return 0;
+            return;
         }
         temp = pop(stack, &top);
         ch[0] = temp;
@@ -159,4 +160,6 @@ void main()
     else{
         cout<<"\n Invalid Infix Expression";
     }
+
+    getch();
 }
