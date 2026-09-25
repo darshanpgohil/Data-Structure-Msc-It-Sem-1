@@ -1,13 +1,11 @@
 #include<iostream>
 #include<stdlib.h>
 
-using namespace std;
-
 void priority_insert(int [],int *,int *,int);
 int priority_delete(int [],int *,int *);
 void priority_display(int [],int *,int *);
 
-int main()
+void main()
 {
     int p1[10],p2[10],p3[10];
     int f1=-1,r1=-1,f2=-1,r2=-1,f3=-1,r3=-1,ch,val,priority,deleteVal;
