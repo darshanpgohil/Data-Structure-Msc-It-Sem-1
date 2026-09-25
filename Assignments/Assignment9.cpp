@@ -1,7 +1,5 @@
-#include <iostream>
+#include <iostream.h>
 #include<stdlib.h>
-
-using namespace std;
 
 struct node
 {
@@ -14,7 +12,7 @@ void delete_sl(struct node **,int);
 void modify_sl(struct node **,int,int);
 void display_sl(struct node **);
 
-int main()
+void main()
 {
     struct node *nd, *head = NULL;
     int val, newVal, ch;
