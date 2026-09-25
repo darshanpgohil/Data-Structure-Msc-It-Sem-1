@@ -1,7 +1,5 @@
-#include<iostream>
+#include<iostream.h>
 #include<stdlib.h>
-
-using namespace std;
 
 void process_insert(int [],int *,int *,int);
 int process_delete(int [],int *,int *);
