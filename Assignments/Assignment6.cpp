@@ -5,13 +5,11 @@
 #include <iostream>
 #include <stdlib.h>
 
-using namespace std;
-
 void circular_insert(int[], int *, int *, int);
 int circular_delete(int[], int *, int *);
 void circular_display(int[], int, int);
 
-int main()
+void main()
 {
     int q[10], f=-1, r=-1, val, ch, deleteVal;
 
