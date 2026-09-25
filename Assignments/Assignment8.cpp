@@ -1,4 +1,4 @@
-#include<iostream>
+#include<iostream.h>
 #include<stdlib.h>
 
 void priority_insert(int [],int *,int *,int);
