@@ -1,6 +1,5 @@
-#include<iostream>
-
-using namespace std;
+#include<iostream.h>
+#include<stdlib.h>
 
 struct node
 {
@@ -13,33 +12,36 @@ void delete_linked_list_stack(struct node **);
 void peek_linked_list_stack(struct node **);
 void display_linked_list_stack(struct node **);
 
-int main()
+void main()
 {
     struct node *top = NULL;
     int ch,val;
 
     do
     {
-        cout<<"\n 1. Insert \n 2. Delete \n 3. Peek \n 4. Display \n";
+	cout<<"\n 1. Insert \n 2. Delete \n 3. Peek \n 4. Display \n 5. Exit \n";
 
-        cout<<"\n Enter The Ch : ";
-        cin>>ch;
+	cout<<"\n Enter The Ch : ";
+	cin>>ch;
 
-        switch(ch)
-        {
-            case 1: cout<<"\n Enter The Val : ";
-                    cin>>val;
-                    insert_linked_list_stack(&top,val);
-                    break;
+	switch(ch)
+	{
+	    case 1: cout<<"\n Enter The Val : ";
+		    cin>>val;
+		    insert_linked_list_stack(&top,val);
+		    break;
 
-            case 2: delete_linked_list_stack(&top);
-                   break;
+	    case 2: delete_linked_list_stack(&top);
+		   break;
 
-            case 3: peek_linked_list_stack(&top);
-                   break;
+	    case 3: peek_linked_list_stack(&top);
+		   break;
 
-            case 4: display_linked_list_stack(&top);
-                   break;
+	    case 4: display_linked_list_stack(&top);
+		   break;
+
+	    case 5: exit(0);
+		    break;
 
             default: cout<<"\n Wrong Choice";
         }
@@ -83,6 +85,7 @@ void peek_linked_list_stack(struct node **top)
     if(*top == NULL)
     {
         cout<<"\n Stack Underflow";
+		return;
     }
 
     cout<<"Peek Value : "<<(*top)->info<<endl;
