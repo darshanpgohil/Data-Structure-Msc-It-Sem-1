@@ -1,4 +1,5 @@
 #include<iostream.h>
+#include<conio.h>
 #include<stdlib.h>
 
 void priority_insert(int [],int *,int *,int);
@@ -9,7 +10,9 @@ void main()
 {
     int p1[10],p2[10],p3[10];
     int f1=-1,r1=-1,f2=-1,r2=-1,f3=-1,r3=-1,ch,val,priority,deleteVal;
-    
+
+    clrscr();
+
     do
     {
         cout<<"\n 1.Insert \n 2.Delete \n 3.Display \n 4.Exit";
@@ -87,7 +90,8 @@ void priority_insert(int p[],int *f,int *r,int val)
 {
     if(*r == 9)
     {
-        cout<<"\n Queue is Full";
+	cout<<"\n Queue is Full";
+	return;
     }
 
     *r = *r + 1;
@@ -129,15 +133,15 @@ void priority_display(int p[],int *f,int *r)
     int i=0;
     if(*f == -1)
     {
-        cout<<"\n Queue Is Empty";
-        return;
+	cout<<"\n Queue Is Empty";
+	return;
     }
 
     i = *f;
 
     while(i <= *r)
     {
-        cout<<"\n"<<p[i];
-        i=i+1;
+	cout<<"\n"<<p[i];
+	i=i+1;
     }
 }
